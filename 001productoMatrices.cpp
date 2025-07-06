@@ -11,5 +11,11 @@ void rellenarMatriz(int matriz[][3]){
 }
 
 int main (){
+    int matriz1[3][3];
+    int matriz2[3][3];
+    int producto[3][3];
+    rellenarMatriz(matriz1);
+    rellenarMatriz(matriz2);
 
+    return 0;
 }
