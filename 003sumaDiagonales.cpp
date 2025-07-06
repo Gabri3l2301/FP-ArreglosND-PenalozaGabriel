@@ -10,9 +10,19 @@ void rellenarMatriz(int matriz[][4]){
     }
 }
 
+void sumaDiagonales(int matriz[][4], int filas, int columnas){
+    int sumaDiagonales = 0;
+    for (int i = 0; i < filas; i++){
+        sumaDiagonales += matriz[i][i];
+        sumaDiagonales += matriz [i][columnas - 1 - i];
+    }
+    cout << "La suma de las diagonales es: " << sumaDiagonales << endl;
+}
+
 int main (){
     int matriz[4][4];
 
     rellenarMatriz(matriz);
+
     return 0;
 }
