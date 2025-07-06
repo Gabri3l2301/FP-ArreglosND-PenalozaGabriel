@@ -20,9 +20,11 @@ void sumaDiagonales(int matriz[][4], int filas, int columnas){
 }
 
 int main (){
+    int m = 4;//filas
+    int n = 4;//columnas
     int matriz[4][4];
 
     rellenarMatriz(matriz);
-
+    sumaDiagonales(matriz, m, n);
     return 0;
 }
