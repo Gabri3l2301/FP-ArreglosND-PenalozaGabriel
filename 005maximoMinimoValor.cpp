@@ -35,6 +35,10 @@ void encontrarMaxMin(int matriz[][TAM], int filas, int columnas) {
 }
 
 int main (){
+    int matriz[TAM][TAM];
+
+    rellenarMatriz(matriz, TAM, TAM);
+    encontrarMaxMin(matriz, TAM, TAM);
     
     return 0;
 }
