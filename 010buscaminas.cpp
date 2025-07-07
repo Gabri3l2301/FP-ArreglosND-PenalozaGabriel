@@ -58,6 +58,12 @@ void mostrarTableros(int tablero[][TAM], int numeros[][TAM], int filas, int colu
 }
 
 int main (){
+    int tablero[TAM][TAM];
+    int numeros[TAM][TAM];
+
+    generarTablero(tablero, TAM, TAM);
+    calcularNumeros(tablero, numeros, TAM, TAM);
+    mostrarTableros(tablero, numeros, TAM, TAM);
 
     return 0;
 }
