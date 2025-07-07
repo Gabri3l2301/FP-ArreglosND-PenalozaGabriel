@@ -17,5 +17,4 @@ int main (){
     cin >> N;
     imprimirCuadradoLatino(N);
     return 0;
-    return 0;
 }
