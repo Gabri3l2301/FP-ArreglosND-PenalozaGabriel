@@ -21,6 +21,16 @@ void imprimirMatriz(int matriz[][TAM], int filas, int columnas) {
     }
 }
 
+void reflejarHorizontalmente(int matriz[][TAM], int filas, int columnas) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas / 2; j++) {
+            int temp = matriz[i][j];
+            matriz[i][j] = matriz[i][columnas - 1 - j];
+            matriz[i][columnas - 1 - j] = temp;
+        }
+    }
+}
+
 int main (){
 
     return 0;
