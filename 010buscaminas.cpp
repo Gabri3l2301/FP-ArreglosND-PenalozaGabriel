@@ -36,6 +36,27 @@ void calcularNumeros(int tablero[][TAM], int numeros[][TAM], int filas, int colu
     }
 }
 
+void mostrarTableros(int tablero[][TAM], int numeros[][TAM], int filas, int columnas) {
+    cout << "Tablero de minas\t\tTablero de números\n";
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            if (tablero[i][j] == 1)
+                cout << "1 ";
+            else
+                cout << "0 ";
+        }
+        cout << "\t\t";
+
+        for (int j = 0; j < columnas; j++) {
+            if (numeros[i][j] == -1)
+                cout << "* ";
+            else
+                cout << numeros[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
 int main (){
 
     return 0;
