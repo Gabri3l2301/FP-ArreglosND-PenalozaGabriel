@@ -46,6 +46,10 @@ void imprimirEspiral(int matriz[][TAM], int n) {
 }
 
 int main (){
-    
+    int matriz[TAM][TAM];
+
+    rellenarMatriz(matriz, TAM, TAM);
+    imprimirEspiral(matriz, TAM);
+
     return 0;
 }
