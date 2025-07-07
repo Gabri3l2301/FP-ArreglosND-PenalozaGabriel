@@ -27,5 +27,19 @@ int main() {
         {9, 10, 11, 12},
         {13,14, 15,16}
     };
+    int fila1;
+    int fila2;
+
+    cout << "Matriz original:" << endl;
+    imprimirMatriz(matriz, TAM, TAM);
+
+    cout << "\nIngrese el numero de la primera fila a intercambiar (0-3): ";
+    cin >> fila1;
+    cout << "Ingrese el numero de la segunda fila a intercambiar (0-3): ";
+    cin >> fila2;
+    intercambiarFilas(matriz, fila1, fila2, TAM);
+
+    cout << "\nMatriz resultante:" << endl;
+    imprimirMatriz(matriz, TAM, TAM);
     return 0;
 }
