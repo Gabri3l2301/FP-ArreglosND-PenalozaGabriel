@@ -12,6 +12,14 @@ void imprimirMatriz(int matriz[][TAM], int filas, int columnas) {
     }
 }
 
+void intercambiarFilas(int matriz[][TAM], int fila1, int fila2, int columnas) {
+    for (int j = 0; j < columnas; j++) {
+        int temp = matriz[fila1][j];
+        matriz[fila1][j] = matriz[fila2][j];
+        matriz[fila2][j] = temp;
+    }
+}
+
 int main() {
     int matriz[TAM][TAM] = {
         {1,  2,  3,  4},
