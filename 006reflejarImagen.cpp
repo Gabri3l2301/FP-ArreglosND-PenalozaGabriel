@@ -32,6 +32,18 @@ void reflejarHorizontalmente(int matriz[][TAM], int filas, int columnas) {
 }
 
 int main (){
+    int matriz[TAM][TAM];
 
+    cout << "Ingrese los valores de la matriz 6x6:" << endl;
+    rellenarMatriz(matriz, TAM, TAM);
+
+    cout << "\nMatriz original:" << endl;
+    imprimirMatriz(matriz, TAM, TAM);
+
+    reflejarHorizontalmente(matriz, TAM, TAM);
+
+    cout << "\nMatriz reflejada horizontalmente:" << endl;
+    imprimirMatriz(matriz, TAM, TAM);
+    
     return 0;
 }
